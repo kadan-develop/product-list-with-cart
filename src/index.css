@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-redhat: "Red Hat Text", sans-serif;
+
+  --color-red: hsl(14, 86%, 42%);
+  --color-green: hsl(159, 69%, 38%);
+  --color-rose-50: hsl(20, 50%, 98%);
+  --color-rose-100: hsl(13, 31%, 94%);
+  --color-rose-300: hsl(14, 25%, 72%);
+  --color-rose-400: hsl(7, 20%, 60%);
+  --color-rose-500: hsl(12, 20%, 44%);
+  --color-rose-900: hsl(14, 65%, 9%);
+}
+@layer base {
+  html {
+    font-size: 16px;
+    font-family: var(--font-redhat);
+  }
+
+  body {
+    background-color: var(--color-rose-50);
+    color: var(--color-rose-900);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-rose-900);
+  }
+
+  a {
+    color: var(--color-red);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+/* 
+@layer components {
+  .btn {
+    @apply bg-red-500 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .btn:hover {
+    @apply bg-red-700;
+  }
+} */
