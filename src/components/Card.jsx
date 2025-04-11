@@ -5,7 +5,7 @@ function Card({ dessert }) {
   console.log(image.thumbnail);
 
   return (
-    <div className="flex flex-col m-4 w-64 h-80">
+    <div className="flex flex-col w-62 h-80">
       <img className="rounded-lg shadow-sm" src={image.desktop} alt="" />
 
       <Button />
